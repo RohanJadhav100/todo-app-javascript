@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="todoBox">
+            <h1 id="todo-text">ToDo List</h1>
+            <form id="addTaskForm" action="" class="inputBox">
+                <input type="text" placeholder="Add your todo here" id="input1">
+                <button class="addBtn" type="submit">+</button>
+            </form>
+            <div class="deletedBox">
+                <button id="selectedDeleteBtn">DELETE SELECTED</button>
+                <button id="allDeleteBtn">DELETE ALL</button>
+            </div>
+            <ul id="ulList">
+            </ul>
+            <div class="filterBox">
+                <div id="filterUI">
+                    <div class="dropdown">
+                        <button id="filterBtn">Filter</button>
+                        <div class="dropdown-content">
+                            <a href="#">All</a>
+                            <a href="#">Pending</a>
+                            <a href="#">Completed</a>
+                        </div>
+                    </div>
+                </div>
+                <p id="completedTask">Completed : 0</p>
+                <p id="totalTask">Total Tasks : 0</p>
+            </div>
+        </div>
+
+    </main>
+    <script src="jquery.js"></script>
+    <script src="todo.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
